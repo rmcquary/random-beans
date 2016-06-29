@@ -244,7 +244,7 @@ public class BeanValidationRandomizerRegistry implements RandomizerRegistry {
         	
         	final String regex = patternAnnotation.regexp();
         	if(fieldType.equals(String.class)) {
-        		return new RegexRandomizer(seed, regex);
+        		return new RegexRandomizer(regex);
         	}
         }
 
